@@ -1,0 +1,47 @@
+section img {
+    height: 150px;
+    width: 150px;
+}
+section h1 {
+font-size: 18px;
+color: green;
+margin-left: 250px;
+}
+.col-md-4 {
+    margin-left: 120px;
+}
+section p {
+    margin-top: 50px;
+}
+.menu { 
+    margin-left: 300px;
+}
+form {
+    margin-left: 250px;
+}
+input {
+    background-color: gray;
+}
+label {
+    color: blue;
+}
+h2 {
+    color: green;
+    font-size: 16px;
+    margin-left: 45px;
+    margin-top: -5px;
+}
+.col-4 {
+    height: 90px;
+    padding-top: 55px;
+    padding-left: 30px;
+}
+.col-4 a {
+    box-sizing: border-box;
+    border: 2px solid;
+    border-radius: 5px;
+    background-color: green;
+    color: white;
+    text-decoration: none;
+margin-top: 60px;
+}
