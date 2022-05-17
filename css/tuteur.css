@@ -1,0 +1,55 @@
+h2 {
+    color: green;
+    font-size: 16px;
+    margin-left: 45px;
+    margin-top: -5px;
+}
+h1 {
+    font-size: 25px;
+    color: blue;
+    margin-left: 275px;
+}
+h5 {
+    margin-left: 600px;
+    font-size: 12px;
+    margin-top: 40px;
+}
+a {
+    box-sizing: border-box;
+    border: 2px solid;
+    border-radius: 5px;
+    background-color: green;
+    color: white;
+    text-decoration: none;
+}
+section {
+    width: 800px;
+    margin-left: 300px;
+}
+.col-2  {
+    height: 90px;
+    margin-top: 60px;
+}
+section form {
+    margin-left: 170px;
+    margin-top: 70px;
+}
+.col-1 {
+    margin-right: 20px;
+}
+label {
+    color: blue;
+}
+.nouveau a {
+    text-decoration: none;
+    box-sizing: border-box;
+    border: 2px solid;
+    border-radius: 5px;
+    background-color: green;
+    color: white;
+    margin-left: 110px;
+}
+.nouveau{
+    margin-left: 500px;
+    margin-top: 40px;
+}

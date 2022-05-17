@@ -17,7 +17,7 @@
                     <h2>UFR/SDS</h2>
                 </div>
                 <div class="col-4 mt-10">
-                   <a href="inscription.php">Créer un cmpte</a>
+                   <a href="inscription.php">Créer un cpmpte</a>
                    <p>Connectez-vous</p>
                 </div>
             </div>
@@ -56,7 +56,7 @@ session_start();
 include ("./dbconnect.php");
  if (isset($_POST['conect'])){
  $mailconnect = htmlspecialchars($_POST['nombre-1']);
- $mdpconnect = ($_POST['nombre-2']);
+ $mdpconnect = sha1($_POST['nombre-2']);
 
  if (!empty($mailconnect) AND !empty($mdpconnect)){
  $admin = "SELECT * FROM Administrateur WHERE Email = '$mailconnect' AND MOT_DE_PASSE = '$mdpconnect'";
@@ -64,9 +64,8 @@ include ("./dbconnect.php");
  $row = mysqli_num_rows($result);
  
  if ($row > '0'){
-     $_SESSION['NOM'] = $nom;
-     $_SESSION['PRENOMS'] = $prenom;
-    header("location: enregistrement.php");
+   
+    header("location: etudiant.php");
  }
  else {
      echo "Mauvais Email ou mot de passe";

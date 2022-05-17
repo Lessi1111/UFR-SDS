@@ -91,7 +91,7 @@ if (isset($_POST["submit"])) {
     $mdp = sha1($_POST["mdp"]);
     $mdp2 = sha1($_POST["mdp2"]);
 
-    $query = "INSERT INTO `administrateur` (`NOM`, `PRENOMS`, `Email`, `MOT_DE_PASSE`) 
+    $query = "INSERT INTO `administrateur` (`nom`, `prenom`, `email`, `mot_de_passe`) 
 VALUES ('$nom', '$prenom', '$mail', '$mdp')";
 
     $result = mysqli_query($connection, $query);
@@ -100,6 +100,7 @@ VALUES ('$nom', '$prenom', '$mail', '$mdp')";
     } else {
         if ($result) {
             echo '<script language="javascript"> alert("Inscription reussie")</script>';
+            header("location: authentique.php");
         } else {
 
             echo '<script language="javascript"> alert("Inscription echouée")</script>';
